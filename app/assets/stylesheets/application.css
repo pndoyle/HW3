@@ -18,3 +18,24 @@
     border-style: solid;
     border-width:2px;
 }
+#office_table {
+    color: gray;
+    border-collapse: collapse;
+    text-align: center; 
+}
+#office_table thead{
+    background-color:lightblue;
+}
+#office_head{
+    border: 1px solid lightblue;
+}
+
+#office_out{
+    border: 1px solid lightblue;
+}
+
+
+#office_middle {
+    background-color: skyblue;
+}
+ 

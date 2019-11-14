@@ -10,5 +10,29 @@
   <%= @physician.specialty %>
 </p>
 
+<h3>Office Location</h3>
+<table id="office_table">
+    <thead>
+      <tr>
+        <th id="office_head">Street Address</th>
+        <th id="office_head">Zip Code</th>
+        <th id="office_head">Phone Number</th>
+      </tr>
+     </thead>
+
+     <tbody id="office_middle">
+     <% @physician.offices.each do |office| %>
+        <tr> 
+          <td id="office_out"><%= office.street_address %></td> 
+          <td id="office_out"><%= office.zip_code %></td> 
+          <td id="office_out"><%= office.phone %></td> 
+        </tr>
+       <% end %> 
+    </tbody>
+  </table>
+
+<br>
+
+
 <%= link_to 'Edit', edit_physician_path(@physician) %> |
 <%= link_to 'Back', physicians_path %>
