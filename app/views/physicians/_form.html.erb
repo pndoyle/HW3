@@ -23,9 +23,8 @@
 
 
   <h3>Offices</h3>
-
   <div id='offices'>
-    <%= form.fields_for :offices do |office| %>
+    <%= form.fields_for :offices, Office.new do |office| %>
       <%= render 'office_fields', :f => office %>
     <% end %>
     <div class='links'>
